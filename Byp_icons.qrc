@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/">
+        <file>Byp_Icons/BIT.png</file>
+        <file>Byp_Icons/SME.jpg</file>
+        <file>Byp_Icons/rb_2.png</file>
+        <file>Byp_Icons/cbpixmap.png</file>
+        <file>Byp_Icons/tbpixmap.png</file>
+    </qresource>
+</RCC>

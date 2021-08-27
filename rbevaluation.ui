@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RBEvaluation</class>
+ <widget class="QMainWindow" name="RBEvaluation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1400</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>RBEvaluation</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QTreeWidget" name="treeWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <column>
+         <property name="text">
+          <string>设计树_参数列表</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidgetworkingarea"/>
+      </item>
+      <item>
+       <widget class="QFrame" name="frameviewmainwindow">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QWidget" name="widgetshowdataentered" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="4" column="0">
+             <widget class="QLabel" name="labelpixmap">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>600</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>600</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <property name="lineWidth">
+               <number>2</number>
+              </property>
+              <property name="midLineWidth">
+               <number>1</number>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtoneditable">
+                <property name="text">
+                 <string>编辑</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>当前计算参数 ：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTableWidget" name="tableWidgetmainwindow">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>100</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="5" column="0">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Preferred</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>新建</string>
+    </property>
+    <addaction name="actionstainput"/>
+    <addaction name="actionsdinput"/>
+    <addaction name="actiondyninput"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>运行</string>
+    </property>
+    <addaction name="actionstarun"/>
+    <addaction name="actionsdrun"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>结果显示</string>
+    </property>
+    <addaction name="actionstaoutput"/>
+    <addaction name="actionsdoutput"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>图表</string>
+    </property>
+    <addaction name="actionstachart"/>
+    <addaction name="actionsdchart"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>三维视图</string>
+    </property>
+    <addaction name="action3D"/>
+    <addaction name="actioncloud_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>打开</string>
+    </property>
+    <addaction name="actionstadata_1"/>
+    <addaction name="actioncharts"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionabout"/>
+   </widget>
+   <widget class="QMenu" name="menuthreeD_calc">
+    <property name="title">
+     <string>三维计算</string>
+    </property>
+    <addaction name="actionThreeD"/>
+    <addaction name="actionCloud"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menuthreeD_calc"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_7"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionstainput">
+   <property name="text">
+    <string>静力学分析</string>
+   </property>
+  </action>
+  <action name="actionsdinput">
+   <property name="text">
+    <string>拟动力学分析</string>
+   </property>
+  </action>
+  <action name="actionstarun">
+   <property name="text">
+    <string>静力学计算</string>
+   </property>
+  </action>
+  <action name="actionsdrun">
+   <property name="text">
+    <string>拟动力学计算</string>
+   </property>
+  </action>
+  <action name="actionstaoutput">
+   <property name="text">
+    <string>静力学分析统计结果</string>
+   </property>
+  </action>
+  <action name="actionsdoutput">
+   <property name="text">
+    <string>拟动力学分析统计结果</string>
+   </property>
+  </action>
+  <action name="actionstachart">
+   <property name="text">
+    <string>静力学图表</string>
+   </property>
+  </action>
+  <action name="actionsdchart">
+   <property name="text">
+    <string>拟动力学图表</string>
+   </property>
+  </action>
+  <action name="action3D">
+   <property name="text">
+    <string>受力分析</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionstaalpha">
+   <property name="text">
+    <string>接触角</string>
+   </property>
+  </action>
+  <action name="actionstaq">
+   <property name="text">
+    <string>球-滚道接触载荷</string>
+   </property>
+  </action>
+  <action name="actionalphai">
+   <property name="text">
+    <string>内圈接触角</string>
+   </property>
+  </action>
+  <action name="actionalphae">
+   <property name="text">
+    <string>外圈接触角</string>
+   </property>
+  </action>
+  <action name="actionlamda">
+   <property name="text">
+    <string>自转姿态角</string>
+   </property>
+  </action>
+  <action name="actionu">
+   <property name="text">
+    <string>摩擦系数</string>
+   </property>
+  </action>
+  <action name="actionQi">
+   <property name="text">
+    <string>内圈接触载荷</string>
+   </property>
+  </action>
+  <action name="actionQe">
+   <property name="text">
+    <string>外圈接触载荷</string>
+   </property>
+  </action>
+  <action name="actionFc">
+   <property name="text">
+    <string>离心力</string>
+   </property>
+  </action>
+  <action name="actionMg">
+   <property name="text">
+    <string>陀螺力矩</string>
+   </property>
+  </action>
+  <action name="actionwb">
+   <property name="text">
+    <string>滚珠公转角速度</string>
+   </property>
+  </action>
+  <action name="actionwc">
+   <property name="text">
+    <string>滚珠自转角速度</string>
+   </property>
+  </action>
+  <action name="actionSRi">
+   <property name="text">
+    <string>滚珠与内滚道旋滚比</string>
+   </property>
+  </action>
+  <action name="actionSRe">
+   <property name="text">
+    <string>滚珠与外滚道旋滚比</string>
+   </property>
+  </action>
+  <action name="actionstadata_1">
+   <property name="text">
+    <string>数据文档</string>
+   </property>
+  </action>
+  <action name="actioncharts">
+   <property name="text">
+    <string>图表图片</string>
+   </property>
+  </action>
+  <action name="actiontopview3D">
+   <property name="text">
+    <string>云图</string>
+   </property>
+  </action>
+  <action name="actioncloud_2">
+   <property name="text">
+    <string>云图</string>
+   </property>
+  </action>
+  <action name="actiondyninput">
+   <property name="text">
+    <string>动力学分析</string>
+   </property>
+  </action>
+  <action name="actionThreeD">
+   <property name="text">
+    <string>应力视图</string>
+   </property>
+  </action>
+  <action name="actionCloud">
+   <property name="text">
+    <string>云图</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
